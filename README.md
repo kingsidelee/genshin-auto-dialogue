@@ -15,11 +15,11 @@ Match two patterns in dialogue playing:
 
 ## How to build
 - MinGW one liner: `g++ -std=c++17 -O3 .\genshin-auto-dialogue.cpp -o .\genshin-auto-dialogue.exe -lgdi32`
-- MinGW static build: `g++ -std=c++17 -O3 .\genshin-auto-dialogue.cpp -o .\genshin-auto-dialogue.exe -lgdi32 -static-libgcc -static-libstdc++`
+- MinGW static build: `g++ -std=c++17 -O3 .\genshin-auto-dialogue.cpp -o .\genshin-auto-dialogue.exe -lgdi32 -static -static-libgcc -static-libstdc++`
 
 ## Requirements
-- Program use Windows API to simulate mouse and keyboard event
-- Support 16:9 resolutions: 1920x1080, 2560x1440, 3840x2160. Other resolutions can be achieve by modifying pixel coordinates.
+- Program use Windows API to simulate mouse and keyboard event, currently not support controller simutation.
+- Support 16:9 resolutions: 1920x1080, 2560x1440, 3840x2160. Other resolutions can be achieved by modifying pixel coordinates.
 - The executable have to run as admin because [User Interface Privilege Isolation](https://en.wikipedia.org/wiki/User_Interface_Privilege_Isolation).
 
 ## Resource usage
