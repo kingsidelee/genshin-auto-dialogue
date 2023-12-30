@@ -165,7 +165,7 @@ class Skipper {
                 << " \'F\' pressing thread started.\n";
       std::cout << duration_cast<seconds>(system_clock::now().time_since_epoch()).count() << " Matching \U0001f4ac...\n";
       while (true) {
-        std::this_thread::sleep_for(3s);
+        std::this_thread::sleep_for(2s);
         s_.capture(buf_);
         auto dot = match_dot();
         auto tri = match_tri();
